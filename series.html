@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +9,348 @@
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
-    <title>NATI-SERIES</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <title>NATI-MOVIES</title>
+    <style>
+        #wrapper1{
+    display: grid;
+    grid-template-columns:repeat(5 ,1fr ) ;
+    grid-template-rows: repeat(15, minmax(50px , auto));
+    grid-gap: 3px;
+}
+        .bar3 {
+            grid-column: 1/6;
+            grid-row: 3/3;
+            background-color: black;
+            color: white;
+            line-height: 0.42857143;
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Playball', cursive;
+
+        }
+
+        .bar4 {
+            grid-column: 2/5;
+            grid-row: 4/4;
+            background-color: black;
+            color: white;
+            line-height: 0.42857143;
+            text-align: center;
+            border-radius: 50%;
+            font-family: 'Playball', cursive;
+        }
+
+        .series1 {
+            grid-column: 2/2;
+            grid-row: 5/5;
+            border: 2px solid black;
+            text-align: center;
+            font-weight: bold;
+            transition: 1s;
+
+        }
+
+        .series1:hover {
+            box-shadow: 0px 2px 20px 17px;
+        }
+
+        .series2 {
+            grid-column: 3/3;
+            grid-row: 5/5;
+            border: 2px solid black;
+            text-align: center;
+            font-weight: bold;
+            transition: 1s;
+        }
+
+        .series2:hover {
+            box-shadow: 0px 2px 20px 17px;
+        }
+
+        .series3 {
+            grid-column: 4/4;
+            grid-row: 5/5;
+            border: 2px solid black;
+            text-align: center;
+            font-weight: bold;
+            transition: 1s;
+        }
+
+        .series3:hover {
+            box-shadow: 0px 2px 20px 17px;
+        }
+
+        .bar5 {
+            grid-column: 2/5;
+            grid-row: 6/6;
+            background-color: black;
+            color: white;
+            line-height: 0.42857143;
+            text-align: center;
+            border-radius: 50%;
+            font-family: 'Playball', cursive;
+        }
+
+        .series4 {
+            grid-column: 2/2;
+            grid-row: 7/7;
+            border: 2px solid black;
+            text-align: center;
+            font-weight: bold;
+            transition: 1s;
+        }
+
+        .series4:hover {
+            box-shadow: 0px 2px 20px 17px;
+        }
+
+        .series5 {
+            grid-column: 3/3;
+            grid-row: 7/7;
+            border: 2px solid black;
+            text-align: center;
+            font-weight: bold;
+            transition: 1s;
+        }
+
+        .series5:hover {
+            box-shadow: 0px 2px 20px 17px;
+        }
+
+        .series6 {
+            grid-column: 4/4;
+            grid-row: 7/7;
+            border: 2px solid black;
+            text-align: center;
+            font-weight: bold;
+            transition: 1s;
+        }
+        .series6:hover {
+            box-shadow: 0px 2px 20px 17px;
+        }
+
+        .bar6 {
+            grid-column: 2/5;
+            grid-row: 8/8;
+            background-color: black;
+            color: white;
+            line-height: 0.42857143;
+            text-align: center;
+            border-radius: 50%;
+            font-family: 'Playball', cursive;
+        }
+        .series7{
+            grid-column: 2/2;
+            grid-row: 9/9;
+            border: 2px solid black;
+            text-align: center;
+            font-weight: bold;
+            transition: 1s;
+        }
+        .series7:hover {
+            box-shadow: 0px 2px 20px 17px;
+        }
+        .series8{
+            grid-column: 3/3;
+            grid-row: 9/9;
+            border: 2px solid black;
+            text-align: center;
+            font-weight: bold;
+            transition: 1s;
+        }
+        .series8:hover {
+            box-shadow: 0px 2px 20px 17px;
+        }
+        .series9{
+            grid-column: 4/4;
+            grid-row: 9/9;
+            border: 2px solid black;
+            text-align: center;
+            font-weight: bold;
+            transition: 1s;
+        }
+        .series9:hover {
+            box-shadow: 0px 2px 20px 17px;
+        }
+        
+        @keyframes nati{ 
+        from{
+          background-image:url(./pics/movies/gif.gif);
+         left:             100%;
+        transform        :rotate(0dg);
+         }
+
+         to {
+            background-image:url(./pics/movies/gif.gif);
+                       left: 0%;
+             transform :rotate(360dg);  
+         }
+        }
+
+        #enjoy{
+        border: solid 4px white;
+        position: relative;
+        width: 400px;
+        height: 400px;
+        background-image: url(./pics/movies/gif.gif);
+        animation-name: nati;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        grid-row: 10/10;
+        grid-column: 1/6;
+        }
+        .info{
+         grid-row: 11/11;
+          grid-column: 1/6;
+        background-color: black;
+         color: white;
+        } 
+        .mail{
+        grid-row: 12/12;
+        grid-column: 1/1; 
+        }
+        .pass{
+        grid-row: 13/13;
+        grid-column: 1/1;
+        }
+        .sub{
+        grid-row: 14/14;
+         grid-column: 1/1;
+         }
+        .copyright{
+         grid-row: 12/14;
+         grid-column: 5/6;
+        }
+        </style>
 </head>
+
 <body>
-    <div id="wrapper">
+    <div id="wrapper1">
         <div class="head1">
-             <h1>AFRICAN-AMERICAN CINEMA</h1>
+            <h1>AFRICAN-AMERICAN CINEMA</h1>
         </div>
         <div class="menu">
-             <ul>
-                  <li><a href="http://127.0.0.1:5500/index.html">MENU</a> </li>
-                  <li><a href="http://127.0.0.1:5500/movies.html">MOVIES</a></li>
-                  <li><a href="http://127.0.0.1:5500/series.html">SERIES</a></li>
-                  <li><a href="#">JOIN US</a></li>
-             </ul>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/index.html">MENU</a> </li>
+                <li><a href="http://127.0.0.1:5500/movies.html">MOVIES</a></li>
+                <li><a href="http://127.0.0.1:5500/series.html">SERIES</a></li>
+                <li><a href="#">JOIN US</a></li>
+            </ul>
         </div>
-
+        <div class="bar3">
+            <h2>SERIES</h2>
+        </div>
+        <div class="bar4">
+            <h3>ACTION</h3>
+        </div>
+        <div class="series1">
+            <a href="https://www.youtube.com/watch?v=L9QM_RqaYAg" target="_blank">
+                <img src="./pics/series 1/action/top boy.jpg" height="350px" width="300px">
+            </a>
+            <p>
+                Two London drug dealers ply their lucrative trade at a public housing estate in East London.
+            </p>
+        </div>
+        <div class="series2">
+            <a href="https://www.youtube.com/watch?v=g9PBhyTHhRE" target="_blank">
+                <img src="./pics/series 1/action/power.jpg" height="350px" width="300px">
+            </a>
+            <p>
+                James "Ghost" St. Patrick, a wealthy New York night club owner who has it all, catering to the city's elite and dreaming
+                big, lives a double life as a drug kingpin.
+            </p>
+        </div>
+        <div class="series3">
+            <a href="https://www.youtube.com/watch?v=3LAUGA01mUc" target="_blank">
+                <img src="./pics/series 1/action/black-lightning.jpg" height="350px" width="300px">
+            </a>
+            <p>
+                A crusading school principal gets back into action as the original African-American electrical superhero.
+            </p>
+        </div>
+        <div class="bar5">
+            <h3>DRAMA</h3>
+        </div>
+        <div class="series4">
+            <a href="https://www.youtube.com/watch?v=LypX9r33GZY" target="_blank">
+                <img src="./pics/series 1/drama/unsolvd.jpg" height="350px" width="300px">
+            </a>
+            <p>
+                A scripted true crime series based on the murder investigations of Tupac Shakur and Biggie Smalls.
+            </p>
+        </div>
+        <div class="series5">
+            <a href="https://www.youtube.com/watch?v=Ws74Ie4fMc8" target="_blank">
+                <img src="./pics/series 1/drama/WHENTheBoughBreak.jpg" height="350px" width="300px">
+            </a>
+            <p>
+                A surrogate mom for a couple becomes dangerously obsessed with the soon-to-be father.
+            </p>
+        </div>
+        <div class="series6">
+            <a href="https://www.youtube.com/watch?v=z7OB6CIZeOY" target="_blank">
+                <img src="./pics/series 1/drama/atlanta.jpg" height="350px" width="300px">
+            </a>
+            <p>
+                Based in Atlanta, Earn and his cousin Alfred try to make their way in the world through the rap scene. Along the way
+                they come face to face with social and economic issues touching on race, relationships, poverty, status, and parenthood.
+            </p>
+        </div>
+        <div class="bar6">
+            <h3>COMEDY</h3>
+        </div>
+        <div class="series7">
+            <a href="https://www.youtube.com/watch?v=5c0XocOHE2k" target="_blank">
+                <img src="./pics/series 1/comedy/marlon.jpg" height="350px" width="300px">
+            </a>
+            <p>
+                A loving (but immature) father with a larger-than-life personality is committed to co-parenting his two kids with his
+                very-together ex-wife but for Marlon family really always does come first - even if he's the biggest kid of all.
+            </p>
+        </div>
+        <div class="series8">
+            <a href="https://www.youtube.com/watch?v=_u6vYpbfCmQ" target="_blank">
+                <img src="./pics/series 1/comedy/fresh prince.jpg" height="350px" width="300px">
+                </a>
+                <p>
+                    A streetwise, poor young man from Philadelphia is sent by his mother to live with his aunt, uncle and cousins in their
+                    Bel-Air mansion.
+                </p>
+        </div>
+        <div class="series9">
+            <a href="https://www.youtube.com/watch?v=l_Pup9i0CCk" target="_blank">
+                <img src="./pics/series 1/comedy/family matters.jpg"  height="350px" width="300px">
+                </a>
+                <p>
+                    The Winslow family deal with various misadventures, many of them caused by their pesky next-door neighbor, ultra-nerd
+                    Steve Urkel.
+                </p>
+        </div>
+        <div class="info">
+            <p> FOR WHATCHING THE FULL MOVIE/EPISODE SIGH IN OR REGISTER.</p>
+       </div>
+       <label class="mail">
+            EMAIL
+            <input type="email" name="name" placeholder="email@example.com" >
+       </label>
+       <label class="pass">
+            PASSWORD
+            <input type="password" name="password" placeholder="*******" >
+       </label>
+       <label class="sub">
+            <button type="submit">SUBMIT</button>
+       </label>
+       <div class="copyright">
+            <p>
+                 © NATI DESE , 2021. The materials on this website may be copied online, but may not be
+                 reproduced in print or any other media without written permission.
+            </p>
+       </div>
+       <div id="enjoy"></div>
     </div>
-</body>
+ </body>
+
 </html>

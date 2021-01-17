@@ -1,8 +1,16 @@
 #wrapper{
     display: grid;
-    grid-template-columns:repeat(5 ,1fr ) ;
+    grid-template-columns:repeat(5 ,1fr);
     grid-template-rows: repeat(20, minmax(50px , auto));
     grid-gap: 5px;
+}
+@media only screen and (max-width:500px){
+    #wrapper{
+        display: grid;
+        grid-template-columns:repeat(3 ,1fr);
+        grid-template-rows: repeat(10, minmax(50px , auto));
+        grid-gap: 5px;
+    }
 }
 p{
     font-family: 'Goldman', cursive;
@@ -13,7 +21,7 @@ p{
     color: white;
    background-color: black;
    font-size: small;
-   text-shadow: white 20px -14px 20px;
+   text-shadow: white 0px 20px 20px;;
    font-family: 'Alfa Slab One', cursive;
    font-size: 20px;
 }
@@ -27,8 +35,8 @@ p{
     grid-column: span 5;
     grid-row: 3 / 12;
     animation-name: headimg;
-    animation-duration: 10s;
-    animation-timing-function: ease-in;
+    animation-duration: 20s;
+    animation-timing-function:ease-in-out;
     animation-iteration-count: infinite;
     background-repeat: no-repeat;
     background-size: 100% 100% ;
