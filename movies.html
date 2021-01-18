@@ -16,7 +16,7 @@
         #wrapper1{
     display: grid;
     grid-template-columns:repeat(5 ,1fr ) ;
-    grid-template-rows: repeat(15, minmax(50px , auto));
+    grid-template-rows: repeat(14, minmax(50px , auto));
     grid-gap: 3px;
 }
         .bar3 {
@@ -224,6 +224,28 @@
          grid-row: 12/14;
          grid-column: 5/6;
         }
+        .menu1{
+            position: fixed;
+            color: #050505;
+            list-style-type: none;
+        }
+
+        .menu1 ul li a{
+            font-size: 20px;
+            text-decoration: none;
+            color: #f70202;
+            list-style-type: none;
+            transition: 0.5s;
+        }
+        .menu1 ul li a:hover{
+            font-size: 23px;
+           font-weight: bold;
+        }
+        .REGISTER{
+        grid-row: 14/14;
+         grid-column: 2/2;
+        margin-left: -198px;
+        }
         </style>
 </head>
 
@@ -351,7 +373,18 @@
                  reproduced in print or any other media without written permission.
             </p>
        </div>
-       <div id="enjoy"></div>
+          <div id="enjoy"></div>
+             <div class="menu1">
+                <ul>
+                     <li><a href="http://127.0.0.1:5500/index.html">MENU</a> </li>
+                      <li><a href="http://127.0.0.1:5500/movies.html">MOVIES</a></li>
+                     <li><a href="http://127.0.0.1:5500/series.html">SERIES</a></li>
+                    <li><a href="#">JOIN US</a></li>
+              </ul>
+            </div>
+            <label class="REGISTER">
+                <button type="submit">REGISTER</button>
+           </label>
     </div>
  </body>
 

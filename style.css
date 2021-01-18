@@ -7,7 +7,7 @@
 @media only screen and (max-width:500px){
     #wrapper{
         display: grid;
-        grid-template-columns:repeat(3 ,1fr);
+        grid-template-columns:(1 , 1fr);
         grid-template-rows: repeat(10, minmax(50px , auto));
         grid-gap: 5px;
     }
@@ -71,7 +71,7 @@ p{
         
     }
     .menu ul li{
-      transition: 1s;
+      transition: 0.5s;
     }
 
     .menu ul li:hover{
@@ -198,4 +198,9 @@ audio{
 .copyright{
     grid-row: 18/20;
     grid-column: 5/6;
+}
+.REGISTER{
+    grid-row: 20/20;
+    grid-column: 2/2;
+    margin-left: -198px;
 }
